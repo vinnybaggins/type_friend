@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: xx-large;
+    font-family: "Garamond";
+    user-select: none;
+}
+
+*:not(button,input){
+    color: bisque;
+}
+
+body{
+    display: flex;
+    place-items: center;
+    background-color: #000;
+    height: 100vh;
+    width: 100vw;
+}
+
+.hide{
+    display: none !important;
+}
+
+.container{
+    position: relative;
+    overflow: hidden;
+    height: 600px;
+    max-width: 800px;
+    min-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #000016a9;
+}
+
+section, .section{
+    position: relative;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+#inputContainer{
+    position: relative;
+    background-image: url(doors_of_durin.jpg);
+    background-size: 130% auto;
+    background-position: center -120px;
+}
+
+#inputContainerInside{
+    position: relative;
+    backdrop-filter: invert(45%);
+    text-shadow: 2px 2px 3px black;
+}
+
+#balrogContainerInside{
+    position: relative;
+    backdrop-filter: invert(30%);
+    text-shadow: 3px 3px 2px black;
+    width: 100%;
+}
+
+#balrogContainer p{
+    text-transform: uppercase;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+button{
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: bisque;
+    height: 60px;
+    width: 200px;
+    font-size: x-large;
+}
+
+input{
+    background-color: bisque;
+}
+
+#passButtons{
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+#passButtons button{
+    flex-basis: 30%;
+}
+
+#balrogContainer{
+    background-image: url("balrog.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#welcome{
+    position: relative;
+    top: 15%;
+}
+
+.slideUp{
+    animation: slideUp 1s ease-in forwards;
+}
+
+@keyframes slideUp{
+
+    from {
+        top: 0;
+    }
+
+    to{
+        top: -100%;
+    }
+
+}
