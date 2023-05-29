@@ -66,12 +66,12 @@ reappearBtn.addEventListener(
         input = input.toUpperCase();
 
         if(input === "MELLON"){
-            friendInput.value = "";
             inputContainer.classList.add("slideUp");
             balrogContainer.classList.add("slideUp");
             show(balrogContainer);
-        }else{
-            friendInput.value = "";
+        }else if(input === "FRIEND"){
+            alert("Speak in elvish: it's mellon")
         }
+        friendInput.value = "";
     
 })
