@@ -7,31 +7,27 @@
     <title>Magic Button</title>
     <link rel="stylesheet" href="styles.css" type="text/css">
     <script src="scripts.js" defer></script>
+    <link rel="preload" href="balrog.jpg" as="image"/>
+    <link rel="preload" href="doors_of_durin.jpg" as="image"/>
 </head>
 <body>
     <div class="container">
-        <section id="buttonContainer" class="">
-            <p id="clickMe">Click in the button and it will disappear:</p>
-            <button id="magicBtn">
-                Click me!
-            </button>
-        </section>
-
-        <section id="inputContainer" class="hide">
+        <section id="inputContainer">
             <div id="inputContainerInside" class="section">
-                <p id="typeFriend">TYPE FRIEND AND ENTER:</p>
-                <input type="password" name='number' id="friendInput" placeholder='speak friend'>
+                <p id="typeFriend">DIGITE AMIGO E ENTRE:</p>
+                <input type="password" name='number' id="friendInput" placeholder='digite amigo'>
 
                 <div id="passButtons">
-                    <button id="showPassBtn">Show password</button>
-                    <button id="clearPassBtn">Clear password</button>
-                    <button id="reappearBtn">Bring button back!</button>
+                    <button id="showPassBtn">Mostrar senha</button>
+                    <button id="hidePassBtn" class="hide">Ocultar senha</button>
+                    <button id="clearPassBtn">Limpar</button>
+                    <button id="reappearBtn">Confirmar</button>
                 </div>
             </div>
         </section>
         <section id="balrogContainer" class="hide">
             <div id="balrogContainerInside" class="section">
-                <p id="welcome">Welcome to Moria</p>
+                <p id="welcome">Bem-vindo a Moria</p>
             </div>
         </section>
     </div>
